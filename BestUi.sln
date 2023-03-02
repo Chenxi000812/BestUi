@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestUi", "BestUi\BestUi.csproj", "{2059871D-C549-4FFA-AEA3-F24657439C70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2059871D-C549-4FFA-AEA3-F24657439C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2059871D-C549-4FFA-AEA3-F24657439C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2059871D-C549-4FFA-AEA3-F24657439C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2059871D-C549-4FFA-AEA3-F24657439C70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{2059871D-C549-4FFA-AEA3-F24657439C70}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>BestUi</RootNamespace>
+        <AssemblyName>BestUi</AssemblyName>
+        <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="0Harmony">
+          <HintPath>..\..\..\..\game\steam\steamapps\common\Sons Of The Forest\BepInEx\core\0Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="BepInEx.Core">
+          <HintPath>..\..\..\..\game\steam\steamapps\common\Sons Of The Forest\BepInEx\core\BepInEx.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="BepInEx.Unity.IL2CPP">
+          <HintPath>..\..\..\..\game\steam\steamapps\common\Sons Of The Forest\BepInEx\core\BepInEx.Unity.IL2CPP.dll</HintPath>
+        </Reference>
+        <Reference Include="BulletBallistics">
+          <HintPath>..\..\..\..\game\steam\steamapps\common\Sons Of The Forest\BepInEx\interop\BulletBallistics.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppInterop.Runtime">
+          <HintPath>..\..\..\..\game\steam\steamapps\common\Sons Of The Forest\BepInEx\core\Il2CppInterop.Runtime.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2Cppmscorlib">
+          <HintPath>..\..\..\..\game\steam\steamapps\common\Sons Of The Forest\BepInEx\interop\Il2Cppmscorlib.dll</HintPath>
+        </Reference>
+        <Reference Include="Sons">
+          <HintPath>..\..\..\..\game\steam\steamapps\common\Sons Of The Forest\BepInEx\interop\Sons.dll</HintPath>
+        </Reference>
+        <Reference Include="Sons.Item">
+          <HintPath>..\..\..\..\game\steam\steamapps\common\Sons Of The Forest\BepInEx\interop\Sons.Item.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.TextMeshPro">
+          <HintPath>..\..\..\..\game\steam\steamapps\common\Sons Of The Forest\BepInEx\interop\Unity.TextMeshPro.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+          <HintPath>..\..\..\..\game\steam\steamapps\common\Sons Of The Forest\BepInEx\interop\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TextRenderingModule">
+          <HintPath>..\..\..\..\game\steam\steamapps\common\Sons Of The Forest\BepInEx\interop\UnityEngine.TextRenderingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UI">
+          <HintPath>..\..\..\..\game\steam\steamapps\common\Sons Of The Forest\BepInEx\interop\UnityEngine.UI.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Entrance.cs" />
+        <Compile Include="Patch.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
